@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>caça-palavras</title>
+</head>
+<body>
+    <h1>Caça Palavras</h1>
+    <h2>Tema: Esportes</h2>
+    <h1 class="t2">Volêi- Basquete - Esgrima - Natação - Handebol- Futebol - Futsal - Skate -  Golf - Karatê - Judô - Surfe -
+         Ginastica Ritmica - Ginatica Artistica - Basebal - Softball - Badminton - Tênis</h1>
+
+    <table border = "1" width ="600" height ="600">
+        <script>
+             matriz = new Array;
+            matriz =[["H", "H", "R", "V", "O", "L", "Ê", "I", "F", "J", "L", "B", "A", "S", "Q", "U", "E", "T", "E", "E"],
+                     ["A", "F", "C", "U", "A", "M", "R", "P", "O", "Ç", "H", "A", "N", "D", "E", "B", "O", "L", "G", "A"],
+                     ["Ç", "R", "Y", "X", "W", "N", "A", "T", "A", "Ç", "Ã", "O", "T", "P", "H", "G", "F", "T", "K", "K"],
+                     ["F", "B", "R", "A", "B", "A", "S", "E", "B", "A", "L", "X", "K", "U", "B", "E", "S", "F", "E", "A"],
+                     ["U", "J", "U", "G", "B", "C", "A", "P", "O", "E", "I", "R", "A", "E", "M", "D", "J", "I", "C", "R"],
+                     ["T", "A", "L", "C", "O", "R", "R", "I", "D", "A", "P", "S", "H", "S", "T", "S", "A", "V", "Q", "A"],
+                     ["E", "G", "I", "N", "A", "S", "T", "I", "C", "A", "R", "I", "T", "M", "I", "C", "A", "A", "J", "T"],
+                     ["B", "J", "A", "E", "A", "T", "L", "E", "T", "I", "S", "M", "O", "S", "A", "V", "L", "X", "U", "Ê"],
+                     ["O", "E", "P", "G", "I", "N", "A", "S", "T", "I", "C", "A", "R", "I", "T", "M", "I", "C", "A", "D"],
+                     ["L", "T", "J", "T", "Ê", "N", "I", "S", "A", "R", "S", "O", "F", "T", "B", "A", "L", "L", "Ç", "Q"],
+                     ["Z", "G", "O", "L", "F", "D", "H", "K", "B", "A", "D", "M", "I", "N", "T", "O", "N", "A", "P", "U"],
+                     ["F", "A", "M", "A", "N", "G", "J", "E", "S", "G", "R", "I", "M", "A", "C", "K", "V", "R", "A", "P"],
+                     ["G", "U", "Q", "H", "Ç", "Q", "U", "J", "J", "U", "D", "Ô", "T", "D", "D", "E", "C", "P", "G", "H"],
+                     ["C", "J", "G", "I", "N", "A", "S", "T", "I", "C", "A", "A", "R", "T", "I", "S", "T", "I", "C", "A"],
+                     ["X", "F", "M", "G", "K", "F", "U", "T", "S", "A", "L", "L", "A", "R", "V", "U", "X", "W", "O", "E"],
+                     ["H", "I", "X", "Q", "C", "V", "S", "K", "A", "T", "E", "G", "O", "S", "U", "R", "F", "E", "H", "Ç"]];
+                     
+                     for(vetor = 0; vetor < 16; vetor++){
+            document.write("<tr>");
+            for(elemento = 0; elemento < 20; elemento++){
+                if((vetor == 0) && ((elemento >= 3) && (elemento <= 7))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 0) && ((elemento >= 11) && (elemento <= 18))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 1) && ((elemento >= 10) && (elemento <= 17))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 2) && ((elemento >= 5) && (elemento <= 11))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 6) && ((elemento >= 1) && (elemento <= 9))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 4) && ((elemento >= 5) && (elemento <= 12))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 5) && ((elemento >= 3) && (elemento <= 9))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 6) && ((elemento >= 9) && (elemento <= 16))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 7) && ((elemento >= 4) && (elemento <= 12))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+        
+                else if((vetor == 9) && ((elemento >= 3) && (elemento <= 7))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                }
+                else if((vetor == 11) && ((elemento >= 7) && (elemento <= 13))){
+                    document.write("<td class='palavra-cor'>" + matriz[vetor][elemento] + "</td>");
+                
+                }
+        
+                else{
+                    document.write("<td>" + matriz[vetor][elemento] + "</td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+                     
+                    
+        </script>
+    </table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+table, tr, td{
+    border: 1px solid;
+}
+
+td{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.palavra-cor{
+    background-color: blue;
+    color: #ffffff;
+}
